@@ -1,0 +1,13 @@
+Instructions:
+--> Generate the RAR files
+mvn clean package -DskipTests
+
+--> Create Docker Image
+docker build -t qe-interview .
+
+--> Run the Tests using Docker Setup (Note: Change the Volume Mapping to local dir)
+docker-compose up
+
+ExtentReports path
+src/test/reports
+
