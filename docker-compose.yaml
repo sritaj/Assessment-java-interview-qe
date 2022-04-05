@@ -1,0 +1,7 @@
+version: "3"
+services:
+  hub:
+    image: qe-interview:latest
+    restart: always
+    volumes:
+      - /Users/sritaj/TechnicalKnowHow/Assesment/testResults:/usr/share/tag/test-output
