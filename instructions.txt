@@ -5,9 +5,9 @@ mvn clean package -DskipTests
 --> Create Docker Image
 docker build -t qe-interview .
 
---> Run the Tests using Docker Setup (Note: Change the Volume Mapping to local dir)
+--> Run the Tests using Docker Setup (Note: Change the Volume Mapping to local dir for test-output folder)
 docker-compose up
 
-ExtentReports path
+ExtentReports path for local runs(w/o Docker setup)
 src/test/reports
 
