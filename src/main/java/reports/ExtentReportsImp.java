@@ -22,7 +22,7 @@ public final class ExtentReportsImp {
     public static void initializeReport() {
         if (Objects.isNull(extent)) {
             extent = new ExtentReports();
-            spark = new ExtentSparkReporter(System.getProperty("user.dir") + "/target/reports/AutomationReport.html");
+            spark = new ExtentSparkReporter(System.getProperty("user.dir") + "/src/test/reports/AutomationReport.html");
             spark.config().setTheme(Theme.DARK);
             spark.config().setDocumentTitle("AutomationReport");
             spark.config().setReportName("QE");
